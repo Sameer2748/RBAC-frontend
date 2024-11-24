@@ -41,7 +41,7 @@ function Home() {
 
     // Simulate API call to register the user
     try {
-      const res = await axios.post("https://rbac-backend-xi.vercel.app/api/v1/user/signIn", 
+      const res = await axios.post("https://rbac-backend-wc6u.onrender.com/api/v1/user/signIn", 
         {
           email, password
         })
@@ -72,7 +72,7 @@ function Home() {
 
     // Simulate API call to register the user
     try {
-      const res = await axios.post("http://localhost:3000/api/v1/user/signUp", 
+      const res = await axios.post("https://rbac-backend-wc6u.onrender.com/api/v1/user/signUp", 
         {
           name, email, password
         })

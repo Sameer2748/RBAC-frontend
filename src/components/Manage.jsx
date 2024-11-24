@@ -26,7 +26,7 @@ const Manage = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/v1/admin/", {
+      const res = await axios.get("https://rbac-backend-wc6u.onrender.com/api/v1/admin/", {
         headers: {
           Authorization: `${localStorage.getItem("token")}`,
         },
@@ -56,7 +56,7 @@ const Manage = () => {
     console.log(selecteduser);
     try {
       const res = await axios.post(
-        `http://localhost:3000/api/v1/admin/update`,
+        `https://rbac-backend-wc6u.onrender.com/api/v1/admin/update`,
         {
           role: data.role,
           status: data.status,
@@ -92,7 +92,7 @@ const Manage = () => {
   const handleDelete = async (id) => {
     try {
       const res = await axios.post(
-        `http://localhost:3000/api/v1/admin/delete/`,
+        `https://rbac-backend-wc6u.onrender.com/api/v1/admin/delete/`,
         { userId: id },
         {
           headers: {

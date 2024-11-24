@@ -16,7 +16,7 @@ const Navbar = ({onClick}) => {
           if (token) {
             try {
               // Use the token to fetch user details from your API
-              const res = await axios.get('http://localhost:3000/api/v1/user/', {
+              const res = await axios.get('https://rbac-backend-wc6u.onrender.com/api/v1/user/', {
                 headers: { Authorization: `${token}` },
               });
     
