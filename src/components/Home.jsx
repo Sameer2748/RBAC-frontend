@@ -142,7 +142,12 @@ function Home() {
             <p className='w-[50%] text-center text-white text-[30px]'>You can try the admin feature by these credentials</p>
             <h1 className='w-[50%] text-center text-gray-600 text-[30px]' >email: admin@gmail.com</h1>
             <p className='w-[50%] text-center text-gray-600 text-[30px]'>password: 123</p>
-            <button onClick={handleLogOut} className='mt-5 p-2 w-[70px] rounded-md bg-blue-500 text-white'>Logout</button>
+            {
+              user.name !== "" && (
+                <button onClick={handleLogOut} className='mt-5 p-2 w-[70px] rounded-md bg-blue-500 text-white'>Logout</button>
+
+              )
+            }
           </div>
         )
       }
