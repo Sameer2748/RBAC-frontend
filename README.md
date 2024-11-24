@@ -1,4 +1,13 @@
 # React + Vite
+Rbac based project
+you can setup by these steps:-
+git clone https://github.com/Sameer2748/RBAC-frontend.git 
+npm install 
+npm run dev
+
+Then Go to: http://localhost:5173/
+
+if you wanna connect backend also then go to his repo and clone it
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
